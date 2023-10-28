@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <status id="0001" name="Подготовка"/>
+    <status id="0002" name="В работе"/>
+    <status id="0003" name="Выполнено"/>
+    <status id="0004" name="Ожидание оплаты"/>
+    <status id="0005" name="Закрыто"/>
+</data>
