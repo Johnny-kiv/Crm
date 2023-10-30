@@ -92,7 +92,7 @@
     <section class="home-content">
       <div class="overview-boxes">
         {% for res in res_list %}
-        <div class="box" onclick="window.location.href = '{{href}}';">
+        <div class="box" >
           <div class="right-side">
             <div class="indicator">
               <img src="/static/executor.png" style="margin-right:4px;">
@@ -105,11 +105,11 @@
             <div class="box-topic">{{res.number}} {{res.name}}</div>
             <span class="description">{{res.descr}}...</span>
             <div class="indicator">
-              <img src="/static/sale.png" style="margin-right:4px;"></img>
+              <img src="/static/sale.png" style="margin-right:4px;"/>
               <span class="text">{{res.status}}</span>
             </div>
           </div>
-          <img src="info.png"/>
+          <img src="static/info.png" onclick="window.location.href = '{{href}}';" class="info"/>
         </div>
         {% endfor %}
       </div>

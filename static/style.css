@@ -231,6 +231,10 @@ nav .profile-details i{
 .description{
   font-size: 14px;
 }
+.info:hover{
+    border-radius:50%;
+    box-shadow: 0 0 0 3px blue;
+}
 .home-content .box .cart{
   display: inline-block;
   font-size: 32px;
