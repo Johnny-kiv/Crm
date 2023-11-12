@@ -42,8 +42,7 @@ def one(number):
             executor = elem.attrib['executor']
             data = elem.attrib['expiration']
             status = elem.attrib['status_payment']
-    d = {"name":name, "descr":descr,"author":executor,"data":data,"status":status}
-    return render_template(f'tasks-descriptions/{number}.html',name=name, descr=descr,author=executor,data=data,status=status)
+    return render_template('tasks-descriptions/'+number+'.html',name=name, descr=descr,author=executor,data=data,status=status)
 
 
 if __name__ == '__main__':

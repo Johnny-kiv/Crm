@@ -73,7 +73,7 @@
   </ul>
   </div>
   <section class="home-section">
-    <nav>
+    <nav  style="margin-bottom:200px">
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Сантехника</span>
@@ -88,24 +88,23 @@
         <img src="static/exit.png" style="margin-left:10px;right:1px;"/>
       </div>
     </nav>
-
-        <div class="box" >
-          <div class="right-side">
+        <div>
             <div class="indicator">
-              <img src="/static/executor.png" style="margin-right:4px;">
+              <img src="/static/executor.png"width="30px" style="margin-right:4px;">
               <span class="text">{{author}}</span>
             <div style="margin-left:20px;">
               <img src="/static/deadline.png"/>
               <span class="text">{{data}}</span>
             </div>
             </div>
-            <div class="box-topic">{{number}} {{name}}</div>
-            <span class="description">{{res.descr}}...</span>
+            <details>
+                <summary style="font-size:30px">{{number}} {{name}}</summary>
+                <span class="description" style="font-size:20px">{{descr}}</span>
+            </details>
             <div class="indicator">
-              <img src="/static/sale.png" style="margin-right:4px;"/>
+              <img src="/static/sale.png" width="30px" style="margin-right:4px;"/>
               <span class="text">{{status}}</span>
             </div>
-          </div>
         </div>
   </section>
 </body>
