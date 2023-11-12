@@ -76,7 +76,7 @@
     <nav>
       <div class="sidebar-button">
         <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
+        <span class="dashboard">Сантехника</span>
       </div>
       <div class="search-box">
         <input type="text" placeholder="Search...">
@@ -84,8 +84,8 @@
       </div>
       <div class="profile-details">
         <!--<img src="images/profile.jpg" alt="">-->
-        <span class="admin_name">Prem Shahi</span>
-        <i class='bx bx-chevron-down' ></i>
+        <span class="admin_name">Выход</span>
+        <img src="static/exit.png" style="margin-left:10px;right:1px;"/>
       </div>
     </nav>
 
@@ -109,7 +109,7 @@
               <span class="text">{{res.status}}</span>
             </div>
           </div>
-          <img src="static/info.png" onclick="window.location.href = '{{href}}';" class="info"/>
+          <img src="static/info.png" onclick="{{res.href}}" class="info"/>
         </div>
         {% endfor %}
       </div>

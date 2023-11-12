@@ -152,7 +152,7 @@ nav .search-box .bx-search{
   border: 2px solid #EFEEF1;
   border-radius: 6px;
   height: 50px;
-  min-width: 190px;
+  min-width: 100px;
   padding: 0 15px 0 2px;
 }
 nav .profile-details img{
@@ -413,6 +413,9 @@ nav .profile-details i{
   .home-content .sales-boxes .sales-details{
     width: 560px;
   }
+}
+.profile-details:hover{
+    box-shadow: 0 0 0 3px #000;
 }
 @media (max-width: 550px) {
   .overview-boxes .box{

@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <title>Задача {{number}}</title>
-</head>
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="static/style.css">
+    <!-- Boxicons CDN Link -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <div>{{number}} {{titlle}}</div>
-    <div>{{Description}}</div>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">CodingLab</span>
+    </div>
+<ul class="nav-links">
+    <li>
+      <a href="#" class="active">
+        <i class='bx bx-grid-alt' ></i>
+        <span class="links_name">Админ панель</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-box' ></i>
+        <span class="links_name">Заказы</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-list-ul' ></i>
+        <span class="links_name">Клиенты</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-pie-chart-alt-2' ></i>
+        <span class="links_name">Задачи</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-coin-stack' ></i>
+        <span class="links_name">Счета</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-book-alt' ></i>
+        <span class="links_name">Отчеты</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-user' ></i>
+        <span class="links_name">Команда</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-message' ></i>
+        <span class="links_name">Сообщения</span>
+      </a>
+    </li>
+
+    <li class="log_out">
+      <a href="#">
+        <i class='bx bx-log-out'></i>
+        <span class="links_name">Выход</span>
+      </a>
+    </li>
+  </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Сантехника</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Выход</span>
+        <img src="static/exit.png" style="margin-left:10px;right:1px;"/>
+      </div>
+    </nav>
+
+        <div class="box" >
+          <div class="right-side">
+            <div class="indicator">
+              <img src="/static/executor.png" style="margin-right:4px;">
+              <span class="text">{{author}}</span>
+            <div style="margin-left:20px;">
+              <img src="/static/deadline.png"/>
+              <span class="text">{{data}}</span>
+            </div>
+            </div>
+            <div class="box-topic">{{number}} {{name}}</div>
+            <span class="description">{{res.descr}}...</span>
+            <div class="indicator">
+              <img src="/static/sale.png" style="margin-right:4px;"/>
+              <span class="text">{{status}}</span>
+            </div>
+          </div>
+        </div>
+  </section>
 </body>
 </html>
