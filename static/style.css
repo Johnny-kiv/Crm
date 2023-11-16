@@ -225,10 +225,13 @@ nav .profile-details i{
 .box .indicator i.down{
   background: #e87d88;
 }
-.indicator{
-margin-right:2px;
-display:block;
-float:right;
+.indicator1{
+height:50px;
+width:1000px;
+margin-bottom:10px;
+}
+.indicator div{
+    float:left;
 }
 .home-content .box .indicator .text{
   font-size: 12px;
