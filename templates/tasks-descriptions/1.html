@@ -88,24 +88,30 @@
         <img src="static/exit.png" style="margin-left:10px;right:1px;"/>
       </div>
     </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="border:solid;position: absolute;">
         <div>
-            <div class="indicator">
+            <div class="indicator" style="border:2px;">
               <img src="/static/executor.png"width="30px" style="margin-right:4px;">
               <span class="text">{{author}}</span>
-            <div style="margin-left:20px;">
-              <img src="/static/deadline.png"/>
-              <span class="text">{{data}}</span>
-            </div>
+               <div style="margin-left:4px">
+                  <img src="/static/deadline.png"/>
+                  <span class="text">{{data}}</span>
+                  </div>
+               <div>
+                  <img src="/static/sale.png" width="30px" style="margin-left:0px;"/>
+                  <span class="text">{{status}}</span>
+               </div>
             </div>
             <details>
                 <summary style="font-size:30px">{{number}} {{name}}</summary>
                 <span class="description" style="font-size:20px">{{descr}}</span>
             </details>
-            <div class="indicator">
-              <img src="/static/sale.png" width="30px" style="margin-right:4px;"/>
-              <span class="text">{{status}}</span>
-            </div>
         </div>
+  </div>
   </section>
 </body>
 </html>

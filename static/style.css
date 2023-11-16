@@ -225,6 +225,11 @@ nav .profile-details i{
 .box .indicator i.down{
   background: #e87d88;
 }
+.indicator{
+margin-right:2px;
+display:block;
+float:right;
+}
 .home-content .box .indicator .text{
   font-size: 12px;
 }
