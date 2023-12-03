@@ -31,9 +31,9 @@ def main():
         d1 = {"href":href, "name":name, "descr":descr,"author":executor,"data":data,"status":status}
         res_list.append(d1)
     return render_template('panel.html',res_list=res_list)
-@app.route("/<number>")
+@app.route("/number")
 def one(number):
-    path = f"client/0001/tasks/task_1.xml"
+    path = f"client/0001/tasks/task_{number}.xml"
     name = xml("title",path)
     descr = xml("description",path)
     root_node = ET.parse(path).getroot()
@@ -42,6 +42,7 @@ def one(number):
             executor = elem.attrib['executor']
             data = elem.attrib['expiration']
             status = elem.attrib['status_payment']
+    print(number)
     return render_template('tasks-descriptions/'+number+'.html',name=name, descr=descr,author=executor,data=data,status=status)
 
 
